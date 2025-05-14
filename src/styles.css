@@ -8,6 +8,12 @@ body {
   margin: 0 auto;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("/images/Sao-Paulo-Cathedral-Catedral-da-Se.jpg");
@@ -57,8 +63,41 @@ header a {
 }
 
 section {
-  max-width: 1600px;
+  max-width: 1400px;
   margin: 0 auto;
+  padding: 100px 0;
+}
+main {
+  background-color: white;
+}
+main h2 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.3;
+  margin: 0;
+}
+
+main h3 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+main p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+}
+main img {
+  max-width: 100%;
 }
 
 footer section {
@@ -70,7 +109,7 @@ footer section {
     url("/images/Cidade_Maravilhosa.jpg");
   background-position: center;
   background-size: cover;
-  padding: 100px 50px;
+  padding: 100px 100px;
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
 }
@@ -112,5 +151,16 @@ footer a {
   header a {
     font-size: 12px;
     padding: 8px 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  footer section {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+  section {
+    padding: 30px;
   }
 }
